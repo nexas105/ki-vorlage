@@ -25,7 +25,7 @@ const BASIS = [
   /^CHANGELOG\.md$/, /^VERSION$/, /^\.claude\/settings\.json$/, /^\.gitignore$/,
   /^docs\/0[^/]*\.md$/, /^docs\/README\.md$/, /^docs\/vorlagen\//,
   /^web\/scripts\//, /^web\/public\/logo[^/]*\.svg$/, /^web\/\.env\.example$/,
-  /^web\/components\/layout\/(SiteFooter|PrototypBanner|Logo)\.tsx$/,
+  /^web\/components\/layout\/(SiteFooter|PrototypBanner|Logo|Intro)\.tsx$/,
 ];
 const CODE = [
   /^web\/components\//, /^web\/lib\//, /^web\/app\/globals\.css$/, /^web\/app\/admin\//,

@@ -23,21 +23,22 @@
     .env.example           Vorlage für .env.local (Admin-Passwort)
     public/                Bilder, u. a. logo.svg und logo-weiss.svg
     app/                   Seiten (jede page.tsx in einem Unterordner ist eine Seite)
-      layout.tsx           Rahmen jeder Seite: Banner, Kopf mit Logo, Fuß
-      page.tsx             Startseite                                  → /
-      eintraege/           Beispiel: öffentlich erfassen               → /eintraege
+      layout.tsx           Äußerster Rahmen: Vorspann (Intro) + Prototyp-Banner
+      (seite)/             Öffentliche Seiten, mit Kopfzeile und Fuß (layout.tsx)
+        page.tsx           Demo-Startseite                             → /
+        eintraege/         Beispiel: öffentlich erfassen               → /eintraege
       admin/
         login/             Passwort-Eingabe                            → /admin/login
         actions.ts         Anmelden / Abmelden
         (bereich)/         Alles hier drin ist nur nach Anmeldung erreichbar
-          layout.tsx       Prüft die Anmeldung, zeigt die Admin-Seitenleiste
+          layout.tsx       Prüft die Anmeldung, dunkle Seitenleiste + Kopfleiste
           page.tsx         Übersicht mit Kennzahlen                    → /admin
           eintraege/       Einträge verwalten / löschen                → /admin/eintraege
           outbox/          Vorschau „verschickter“ Mails               → /admin/outbox
       globals.css          Gestaltung (Farben oben in :root)
     components/
       ui/                  Wiederverwendbare Bausteine (siehe 05-komponenten.md)
-      layout/              Logo, Kopf, Fuß, Admin-Navigation, Prototyp-Banner
+      layout/              Logo, Kopf, Fuß, Admin-Seitenleiste, Icons, Vorspann, Banner
     lib/
       db.ts                Verbindung zur SQLite-Datenbank
       schema.sql           Tabellen (wird beim Start automatisch angelegt)
@@ -63,7 +64,7 @@
 
 ## Neue Seite anlegen
 
-- Öffentlich: `web/app/<name>/page.tsx` → erreichbar unter `/<name>`, Menüpunkt in
+- Öffentlich: `web/app/(seite)/<name>/page.tsx` → erreichbar unter `/<name>`, Menüpunkt in
   `web/components/layout/SiteHeader.tsx` ergänzen.
 - Nur für Admins: `web/app/admin/(bereich)/<name>/page.tsx` → `/admin/<name>`, Menüpunkt in
   `web/components/layout/AdminNav.tsx` ergänzen.

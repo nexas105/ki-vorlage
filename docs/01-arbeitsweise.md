@@ -59,6 +59,18 @@ gilt derselbe Ablauf in klein: 1–2 Fragerunden, als neuer Abschnitt oben in
 `docs/fragerunden.md` festhalten, Bauplan in `docs/projekt.md` ergänzen, Freigabe fragen.
 Kleinigkeiten (Text, Farbe, ein zusätzliches Feld) brauchen keine Planungsrunde.
 
+### Was beim Planen und Bauen außerdem gilt
+
+- **Ideen außerhalb des Bauplans** kommen nach `docs/wuensche.md`, nicht sofort in den Code.
+- **Anbindungen an andere Systeme, KI-Dienste und Rechtstexte** werden nur simuliert bzw.
+  als Platzhalter angelegt (Details: AGENTS.md, Abschnitt 4).
+- **Gesprächspunkte mit Tobias:** nach der Freigabe größerer Pläne und wenn der Prototyp
+  fertig ist, kurz vorschlagen, Tobias draufschauen zu lassen; Zusammenfassung in
+  `docs/status-fuer-tobias.md`.
+- **Zu groß?** Ab etwa 10 Seiten oder mehreren unabhängigen Bereichen: Stand machen und
+  mit Tobias sprechen.
+- **Dreimal am selben Problem gescheitert?** Aufhören, dokumentieren, Tobias fragen.
+
 ## Bauen in Schritten
 
 Nach der Freigabe Schritt für Schritt nach dem Bauplan:
@@ -69,8 +81,11 @@ Nach der Freigabe Schritt für Schritt nach dem Bauplan:
 3. Dem Nutzer zeigen, im Browser ausprobieren lassen, nachfragen.
 4. Nächste Funktion.
 
-Nach jedem Schritt: im Bauplan abhaken, kurz zeigen, was jetzt geht, und fragen, ob es
-passt, bevor der nächste Schritt beginnt.
+Nach jedem Schritt: im Bauplan abhaken, `docs/anleitung.md` ergänzen, kurz zeigen, was
+jetzt geht, und fragen, ob es passt, bevor der nächste Schritt beginnt.
+
+Vor größeren Umbauten wird ein Stand gesichert (Commit oder ZIP). Gelöscht wird nur nach
+Rückfrage. Beispieldaten sind erfunden, aber realistisch (`npm run seed`).
 
 ## Offene Punkte
 

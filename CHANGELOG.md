@@ -9,6 +9,30 @@ Versionsschema: `HAUPT.NEBEN.FIX`
 - **NEBEN**: neue Bausteine, Regeln oder Doku, Update per Skript
 - **FIX**: Korrekturen, Update per Skript
 
+## 1.2.0 – 2026-11-10
+
+Neue Regeln (AGENTS.md, Abschnitte 4 und 14–20):
+- Anbindungen an andere Systeme nur simulieren (Platzhalter oder CSV-Import mit Testdaten)
+- Keine externen KI-Dienste oder kostenpflichtigen Schnittstellen, Ergebnis wird simuliert
+- Keine Rechtstexte erzeugen, nur Platzhalter
+- Abbruch-Regel: nach drei Fehlversuchen aufhören, dokumentieren, Tobias fragen
+- Umfang begrenzen: ab etwa 10 Seiten oder mehreren Bereichen Rücksprache
+- Feste Gesprächspunkte mit Tobias, Zusammenfassung in `docs/status-fuer-tobias.md`
+- Bedienungsanleitung `docs/anleitung.md` mit Screenshots
+- Realistische, erfundene Beispieldaten pro Projekt
+- Vor größeren Umbauten sichern, Löschen nur nach Rückfrage
+- Wünsche außerhalb des Bauplans in `docs/wuensche.md` sammeln
+
+Neue Vorlagen: `docs/vorlagen/anleitung.md`, `wuensche.md`, `status-fuer-tobias.md`
+
+App: animierter Vorspann (`web/components/layout/Intro.tsx`) beim ersten Öffnen pro
+Sitzung, überspringbar, Teil der geschützten Basis. Screenshots überspringen ihn.
+Neue Demo-Startseite: Hero im Intro-Stil, Ablauf in vier Schritten, Ausprobieren,
+Abschnitt „Betriebsfertig“ (bleibt beim Ersetzen der Startseite erhalten).
+Neues Layout: öffentliche Seiten in `web/app/(seite)/` mit klebender Kopfzeile (aktive Seite,
+Admin-Knopf); Adminbereich kantig mit dunkler Seitenleiste, Icons, Kopfleiste und eigenem
+Login-Bildschirm. Neue Bausteine `NavLink.tsx` und `Icon.tsx`.
+
 ## 1.1.0 – 2026-11-10
 
 - Fragerunden werden protokolliert: neue Datei `docs/fragerunden.md` (Vorlage in

@@ -53,6 +53,8 @@ Ich möchte ein neues Tool als Prototyp bauen lassen. Bitte gehe so vor:
    Runde, mit Antwortmöglichkeiten und deiner Empfehlung. Halte jede Runde sofort in
    `docs/fragerunden.md` fest. Fasse danach alles mit Bauplan in `docs/projekt.md`
    zusammen und lege `docs/offene-punkte.md` aus der Vorlage an.
+   Lege außerdem `docs/wuensche.md`, `docs/anleitung.md` und
+   `docs/status-fuer-tobias.md` aus den Vorlagen an.
    **Frag mich dann ausdrücklich, ob du mit dem Bauen anfangen sollst.** Erst nach
    meinem Ja wird gebaut.
 

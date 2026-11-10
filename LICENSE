@@ -25,8 +25,9 @@ NUTZUNGSBEDINGUNGEN DER KI-VORLAGE
    - Mit KI-Assistenten beliebige Funktionen, Seiten und Inhalte auf der Basis
      aufzubauen („prompten“) und dafür den Code in web/ zu erweitern.
    - Projektspezifische Dateien anzulegen und zu ändern, insbesondere
-     docs/projekt.md, docs/fragerunden.md, docs/offene-punkte.md und
-     docs/einrichtung.md.
+     docs/projekt.md, docs/fragerunden.md, docs/offene-punkte.md,
+     docs/einrichtung.md, docs/anleitung.md, docs/wuensche.md und
+     docs/status-fuer-tobias.md.
    - Prototypen intern zu zeigen und an Tobias Ludwig zur Weiterentwicklung
      zu übergeben.
 
@@ -35,7 +36,8 @@ NUTZUNGSBEDINGUNGEN DER KI-VORLAGE
      (AGENTS.md, CLAUDE.md, .claude/, LICENSE, README.md, EMPFEHLUNG.md,
      CHANGELOG.md, VERSION, tools/, docs/0*,
      docs/README.md, docs/vorlagen/).
-   - Copyright- und Lizenzhinweise zu entfernen, auch nicht im Fußbereich der App.
+   - Copyright- und Lizenzhinweise zu entfernen oder abzuschwächen, auch nicht im
+     Fußbereich oder im Vorspann (Intro) der App.
    - Die Basis an Dritte weiterzugeben, zu verkaufen, zu veröffentlichen oder
      als Grundlage für Leistungen Dritter zu verwenden.
 

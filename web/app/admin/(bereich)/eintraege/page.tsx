@@ -1,6 +1,6 @@
 import { Button, DataTable, EmptyState, PageHeader } from "@/components/ui";
 import { db } from "@/lib/db";
-import { eintragLoeschen } from "@/app/eintraege/actions";
+import { eintragLoeschen } from "@/app/(seite)/eintraege/actions";
 
 type Eintrag = { id: number; titel: string; notiz: string | null; erstellt_am: string };
 

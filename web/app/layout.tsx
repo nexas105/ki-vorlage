@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { PrototypBanner } from "@/components/layout/PrototypBanner";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { Intro } from "@/components/layout/Intro";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,14 +13,22 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+// Äußerster Rahmen: Vorspann + Prototyp-Banner.
+// Öffentliche Seiten: app/(seite)/layout.tsx · Adminbereich: app/admin/(bereich)/layout.tsx
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <body>
+        {/* Vorspann nur einmal pro Sitzung: schon gesehen → sofort ausblenden, ohne Aufblitzen */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(sessionStorage.getItem('intro-gesehen')==='1')document.documentElement.classList.add('ohne-intro')}catch(e){}",
+          }}
+        />
+        <Intro />
         <PrototypBanner />
-        <SiteHeader />
-        <main className="inhalt">{children}</main>
-        <SiteFooter />
+        {children}
       </body>
     </html>
   );

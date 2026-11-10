@@ -1,5 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
-import { Button, Card, Notice, TextField } from "@/components/ui";
+import { Button, Notice, TextField } from "@/components/ui";
+import { Icon } from "@/components/layout/Icon";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 import { istAdmin, passwortGesetzt } from "@/lib/admin";
 import { anmelden } from "../actions";
 
@@ -10,8 +14,14 @@ export default async function Login({ searchParams }: { searchParams: Promise<{ 
   const { fehler } = await searchParams;
 
   return (
-    <div className="schmal">
-      <Card titel="Adminbereich">
+    <div className="login">
+      <div className="login-glut" aria-hidden />
+      <div className="login-karte">
+        <Image src="/logo-weiss.svg" alt="Hüttinger Direktwerbung" width={170} height={49} priority />
+        <div className="login-kopf">
+          <Icon name="schloss" groesse={20} />
+          <h1>Adminbereich</h1>
+        </div>
         {!passwortGesetzt() ? (
           <Notice art="warnung">
             Es ist noch kein Passwort gesetzt. Lege die Datei <code>web/.env.local</code> an (Vorlage:{" "}
@@ -24,11 +34,17 @@ export default async function Login({ searchParams }: { searchParams: Promise<{ 
             <Button>Anmelden</Button>
           </form>
         )}
-      </Card>
-      <p className="leise klein">
-        Einfacher Passwortschutz für den Prototyp. Für den echten Betrieb muss ein Entwickler einen
-        richtigen Login einrichten.
-      </p>
+        <p className="login-hinweis">
+          Einfacher Passwortschutz für den Prototyp. Für den echten Betrieb richtet ein Entwickler einen
+          richtigen Login ein.
+        </p>
+        <Link href="/" className="login-zurueck">
+          ← Zur Website
+        </Link>
+      </div>
+      <div className="login-fuss">
+        <SiteFooter />
+      </div>
     </div>
   );
 }

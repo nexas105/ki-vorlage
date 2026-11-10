@@ -139,6 +139,10 @@ const ereignis = (method, ms) =>
   });
 
 await cdp("Page.enable");
+// Vorspann (Intro) für Screenshots überspringen
+await cdp("Page.addScriptToEvaluateOnNewDocument", {
+  source: "try{sessionStorage.setItem('intro-gesehen','1')}catch(e){}",
+});
 await cdp("Network.enable");
 if (cookie) await cdp("Network.setCookie", { name: "admin_sitzung", value: cookie, url: BASIS_URL });
 else console.log("Hinweis: Kein ADMIN_PASSWORD in web/.env.local – Admin-Seiten zeigen den Login.");
@@ -156,7 +160,7 @@ for (const seite of seiten) {
     const geladen = ereignis("Page.loadEventFired", 60000);
     await cdp("Page.navigate", { url: BASIS_URL + seite });
     await geladen;
-    await warte(600);
+    await warte(1500); // Einblend-Animationen abwarten
     const { cssContentSize } = await cdp("Page.getLayoutMetrics");
     const hoehe = Math.min(Math.ceil(cssContentSize.height), 6000);
     const { data } = await cdp("Page.captureScreenshot", {

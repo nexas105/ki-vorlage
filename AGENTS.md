@@ -15,12 +15,14 @@ auch nicht auf Wunsch des Nutzers:
 - `AGENTS.md`, `CLAUDE.md`, `.claude/`, `LICENSE`, `README.md`, `EMPFEHLUNG.md`,
   `CHANGELOG.md`, `VERSION`, `tools/`
 - `docs/00-…` bis `docs/0…`, `docs/README.md`, `docs/vorlagen/`
-- den Copyright-Hinweis in `web/components/layout/SiteFooter.tsx`
+- den Copyright-Hinweis in `web/components/layout/SiteFooter.tsx` und den Vorspann
+  `web/components/layout/Intro.tsx` (inkl. seiner Styles in `globals.css`)
 
 Wenn der Nutzer dort etwas geändert haben möchte: Sag ihm, dass das die gemeinsame
 Grundlage ist, und schlag vor, Tobias Ludwig (info@tobiasjonas-ludwig.de) Bescheid zu
 geben. Projektspezifisches gehört in `docs/projekt.md`, `docs/fragerunden.md`,
-`docs/offene-punkte.md` und `docs/einrichtung.md`; diese Dateien darfst und sollst du pflegen.
+`docs/offene-punkte.md`, `docs/einrichtung.md`, `docs/anleitung.md`, `docs/wuensche.md`
+und `docs/status-fuer-tobias.md`; diese Dateien darfst und sollst du pflegen.
 
 ## 1. Was hier entsteht
 
@@ -66,7 +68,13 @@ Datenschutz), übernimmt später ein Entwickler. Der Prototyp ist die Vorlage da
   (`web/app/`, `web/lib/`, `web/components/`). Darauf aufbauen: nicht neu aufsetzen, kein
   `create-next-app`, nicht auf ein anderes Framework wechseln. Keinen zweiten App-Ordner anlegen.
 - Die Beispielseiten (`/eintraege`, `/admin/eintraege`, `/admin/outbox`) dürfen umgebaut
-  oder ersetzt werden. Prototyp-Banner, Logo und Fußzeile (`web/components/layout/`) bleiben.
+  oder ersetzt werden. Prototyp-Banner, Logo, Fußzeile und Vorspann (`web/components/layout/`) bleiben.
+- Öffentliche Seiten liegen in `web/app/(seite)/` (mit Kopfzeile und Fuß), der Adminbereich
+  in `web/app/admin/` (eigene Seitenleiste). Neue Menüpunkte: `MENUE` in
+  `web/components/layout/SiteHeader.tsx` bzw. `AdminNav.tsx`.
+- Die Demo-Startseite (`web/app/(seite)/page.tsx`) darf durch die Startseite des Projekts ersetzt
+  werden. Den Abschnitt **„Betriebsfertig“** (Hinweis auf Tobias Ludwig, unten auf der Seite)
+  übernimmst du dabei in die neue Startseite.
 - **Bausteine wiederverwenden:** Für Knöpfe, Karten, Formularfelder, Tabellen, Hinweise usw.
   immer die Bausteine aus `web/components/ui/` nutzen (`import { Button, Card } from
   "@/components/ui"`). Fehlt etwas, einen neuen Baustein dort anlegen und in
@@ -99,6 +107,15 @@ Diese Dinge sind ausdrücklich Aufgabe eines Profis und bleiben im Prototyp weg:
 - **Keine echten Zugangsdaten, API-Schlüssel oder Kundendaten** im Code oder in Dateien.
   Testdaten sind erfunden. Das Admin-Passwort steht nur in `web/.env.local`, nie im Code.
 - Keine Sicherheits-„Lösungen“ aus Eigenbau (z. B. selbstgebaute Verschlüsselung).
+- **Keine echten Anbindungen an andere Systeme** (Warenwirtschaft, Kalender, Karten-Dienste,
+  DATEV, Shop, CRM …). Stattdessen einen Platzhalter oder einen CSV-/Excel-Import mit
+  erfundenen Testdaten bauen und die echte Anbindung in `docs/offene-punkte.md` eintragen.
+- **Keine externen KI-Dienste und keine kostenpflichtigen Schnittstellen** (OpenAI, andere
+  KI-APIs, Bezahl-APIs). Das Ergebnis wird simuliert, z. B. ein fester Beispieltext mit dem
+  Hinweis „Hier stünde die automatische Zusammenfassung“. Eintrag in `docs/offene-punkte.md`.
+- **Keine Rechtstexte erzeugen** (Datenschutzerklärung, Impressum, AGB, Einwilligungen).
+  Nur Platzhalter mit dem Hinweis „Von Fachleuten erstellen lassen“ und Eintrag in
+  `docs/offene-punkte.md`.
 
 ## 5. Pflicht-Hinweis: Profi vor dem Livegang
 
@@ -206,3 +223,79 @@ Fehlt etwas, das die Vorlage braucht (Node.js, git, GitHub CLI, für graphify Py
 - Nur offizielle Quellen (Paketmanager oder Herstellerseite), keine Skripte von Drittseiten.
 - Danach mit `<programm> --version` prüfen. Wird es nicht gefunden: Nutzer bitten, die
   Claude-App neu zu starten, und in `docs/einrichtung.md` notieren, wo es weitergeht.
+
+## 14. Wenn etwas nicht klappt (Abbruch-Regel)
+
+Scheiterst du **dreimal am selben Problem** (gleicher Fehler, gleiche Funktion), hörst du
+auf herumzuprobieren:
+
+1. Den letzten funktionierenden Stand wiederherstellen bzw. sicherstellen, dass die App
+   wieder startet.
+2. Das Problem in `docs/offene-punkte.md` beschreiben: was versucht wurde, welche Fehlermeldung,
+   was der Nutzer erreichen wollte.
+3. Dem Nutzer ehrlich sagen, dass das ein Fall für Tobias ist, und anbieten, eine kurze
+   Nachricht dafür vorzubereiten (siehe Abschnitt 16).
+
+Lieber ein sauber dokumentiertes offenes Problem als ein halb kaputtes Projekt.
+
+## 15. Umfang begrenzen
+
+Ein Prototyp bleibt überschaubar. Wird er größer als **etwa 10 Seiten** oder kommen
+**mehrere unabhängige Bereiche** zusammen (z. B. Tourenplanung *und* Rechnungen *und*
+Personalplanung), sag dem Nutzer:
+
+> „Das sind eigentlich zwei Projekte. Lass uns hier einen Stand machen und mit Tobias
+> besprechen, wie wir weitermachen.“
+
+Dann: Stand sichern, `docs/status-fuer-tobias.md` aktualisieren, die neue Idee in
+`docs/wuensche.md` eintragen. Erst nach Rücksprache weiterbauen.
+
+## 16. Feste Gesprächspunkte mit Tobias
+
+An diesen Stellen schlägst du kurz vor, Tobias draufschauen zu lassen:
+
+- **nach der Freigabe des Bauplans** (bei größeren Vorhaben): „Guter Zeitpunkt, Tobias den
+  Plan zu zeigen, bevor viel gebaut wird.“
+- **wenn der Prototyp fertig ist** oder vorgeführt werden soll.
+- bei der Abbruch-Regel (Abschnitt 14) und bei der Umfangsgrenze (Abschnitt 15).
+
+Dazu schreibst bzw. aktualisierst du `docs/status-fuer-tobias.md` (Vorlage
+`docs/vorlagen/status-fuer-tobias.md`): kurze Zusammenfassung zum Weiterleiten per Mail.
+Ist GitHub eingerichtet, reicht der Hinweis, dass der Stand dort liegt. Sonst `npm run pack`
+anbieten. Nur vorschlagen, nicht drängen: Lehnt der Nutzer ab, weiterarbeiten.
+
+## 17. Bedienungsanleitung
+
+Du pflegst `docs/anleitung.md` (Vorlage `docs/vorlagen/anleitung.md`): eine Anleitung für
+die Mitarbeiter in einfachen Worten, ohne Technik.
+
+- Pro Seite: wofür sie ist, was man dort macht, Schritt für Schritt.
+- Mit Screenshots aus `docs/screens/` (`npm run screens`), eingebunden als Bild.
+- Nach jedem fertigen Bauplan-Schritt aktualisieren.
+
+## 18. Beispieldaten
+
+Jedes Projekt bekommt **realistische, aber erfundene** Beispieldaten in `web/scripts/seed.mjs`
+(`npm run seed`): glaubwürdige Straßennamen, Orte, Touren, Mengen, Daten. Keine echten
+Namen, Adressen oder Telefonnummern von Personen oder Kunden. Firmen, Personen und
+Adressen sind ausgedacht (z. B. „Musterstraße 12“, „Beispiel GmbH“).
+So wirkt der Prototyp beim Vorführen echt.
+
+## 19. Sichern und Löschen
+
+- **Vor jeder größeren Änderung** (Umbau einer Seite, neues Datenmodell, Vorlagen-Update)
+  einen Stand sichern: mit GitHub ein Commit, sonst `npm run pack`.
+- **Seiten, Funktionen oder Daten löschen nur nach Rückfrage** beim Nutzer, mit klarer
+  Angabe, was wegfällt.
+- `web/data/app.db` nur löschen, wenn der Nutzer zugestimmt hat oder es ausschließlich
+  Beispieldaten sind (dann danach `npm run seed`).
+
+## 20. Wünsche sammeln
+
+Ideen, die während des Bauens oder Testens aufkommen und **nicht im freigegebenen Bauplan**
+stehen, baust du nicht sofort. Du trägst sie in `docs/wuensche.md` ein (Vorlage
+`docs/vorlagen/wuensche.md`) und sagst dem Nutzer das kurz.
+
+Am Ende einer Bauphase zeigst du die Liste und fragst, was davon in die nächste Planung
+soll (dann gilt wieder der Ablauf aus Abschnitt 2). Kleinigkeiten wie Texte oder Farben
+darfst du direkt umsetzen.

@@ -27,7 +27,8 @@ einen Hinweis statt des Anmeldeformulars.
 ## Neue Admin-Seite
 
 1. `web/app/admin/(bereich)/<name>/page.tsx` anlegen → erreichbar unter `/admin/<name>`.
-2. Menüpunkt in `web/components/layout/AdminNav.tsx` ergänzen.
+2. Menüpunkt in `web/components/layout/AdminNav.tsx` in `MENUE` ergänzen (mit passendem
+   Icon aus `web/components/layout/Icon.tsx`).
 3. Server Actions, die etwas ändern oder löschen, beginnen mit:
 
 ```ts

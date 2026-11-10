@@ -20,6 +20,8 @@ Das packt das **ganze Projekt** (Regeln, `docs/` und `web/`) und legt im Hauptor
 ## Vor dem Packen (die KI erledigt das)
 
 1. `docs/projekt.md` aktualisieren: Was kann das Tool, welche Seiten gibt es?
+   Dazu `docs/anleitung.md` (Bedienung mit Screenshots), `docs/wuensche.md` und
+   `docs/status-fuer-tobias.md` auf den aktuellen Stand bringen.
 2. `docs/offene-punkte.md` aktualisieren: Was fehlt für den Betrieb? Pro Punkt Größe
    (`S`/`M`/`L`) und Priorität. Stunden und Preis bleiben leer, die trägt Tobias ein.
 3. Prüfen, dass `npm run build` (in `web/`) ohne Fehler durchläuft.

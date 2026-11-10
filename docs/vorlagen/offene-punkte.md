@@ -21,6 +21,7 @@ Alles hier fehlt im Prototyp bewusst.
 | - [ ] | Backups der Datenbank und Uploads | S | muss | | | |
 | - [ ] | Datenschutz-Prüfung (DSGVO), ggf. Auftragsverarbeitung | S | muss | | | |
 | - [ ] | Eingaben und Uploads absichern, Fehlerbehandlung | M | muss | | | |
+| - [ ] | Rechtstexte (Datenschutzerklärung, Impressum, ggf. Einwilligungen) von Fachleuten | S | muss | | | |
 
 ## Projektspezifisch
 
@@ -28,6 +29,8 @@ Alles hier fehlt im Prototyp bewusst.
 |---|---|---|---|---|---|---|
 | - [ ] | <z. B. Echter Mailversand für Kundenbenachrichtigung (aktuell nur /admin/outbox)> | S | soll | | | |
 | - [ ] | <z. B. Rollen: Büro sieht alles, Fahrer nur eigene Touren (aktuell per Umschalter simuliert)> | M | muss | | | |
+| - [ ] | <z. B. Anbindung Warenwirtschaft (aktuell CSV-Import mit Testdaten)> | L | soll | | | |
+| - [ ] | <z. B. Automatische Zusammenfassung per KI (aktuell fester Beispieltext)> | M | kann | | | |
 
 ## Laufende Kosten (trägt Tobias ein)
 

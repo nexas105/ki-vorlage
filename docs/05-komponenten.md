@@ -62,9 +62,12 @@ Liegt in `web/components/ui/`, Gestaltung in `web/app/globals.css`.
 | Datei | Inhalt |
 |---|---|
 | `Logo.tsx` | Hüttinger-Logo (`variante="weiss"` für dunkle Flächen) |
-| `SiteHeader.tsx` | Kopfzeile mit Logo und Hauptmenü (Menüpunkte oben in `MENUE`) |
+| `SiteHeader.tsx` | Klebende Kopfzeile mit Logo, Hauptmenü (aktive Seite unterstrichen) und Admin-Knopf; Menüpunkte oben in `MENUE` |
+| `NavLink.tsx` | Link, der sich auf der aktuellen Seite als aktiv markiert |
+| `Icon.tsx` | Strich-Icons (`<Icon name="liste" />`), neue Icons dort ergänzen |
 | `SiteFooter.tsx` | Fußzeile mit Copyright-Hinweis der Basis (nicht ändern) |
-| `AdminNav.tsx` | Seitenleiste im Adminbereich (Menüpunkte oben in `MENUE`) |
+| `Intro.tsx` | Animierter Vorspann beim ersten Öffnen pro Sitzung, Klick überspringt (nicht ändern) |
+| `AdminNav.tsx` | Dunkle Seitenleiste im Adminbereich mit Icons; auf dem Handy als Leiste oben. Menüpunkte oben in `MENUE` (`text`, `href`, `icon`) |
 | `PrototypBanner.tsx` | Hinweis „Prototyp“ oben auf jeder Seite (nicht entfernen) |
 
 ## Neuer Baustein
