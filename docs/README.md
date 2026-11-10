@@ -23,6 +23,7 @@ Projektspezifisches steht in `projekt.md`, `fragerunden.md`, `offene-punkte.md`,
 | [vorlagen/anleitung.md](vorlagen/anleitung.md) | Vorlage Bedienungsanleitung für Mitarbeiter |
 | [vorlagen/wuensche.md](vorlagen/wuensche.md) | Vorlage Wunschliste (Ideen außerhalb des Bauplans) |
 | [vorlagen/status-fuer-tobias.md](vorlagen/status-fuer-tobias.md) | Vorlage Zusammenfassung zum Weiterleiten an Tobias |
+| [vorlagen/it-anfrage.md](vorlagen/it-anfrage.md) | Vorlage Anfrage an die IT bei Firmenrechnern ohne Installationsrechte |
 | [vorlagen/einrichtung.md](vorlagen/einrichtung.md) | Vorlage Checkliste: was wurde schon gefragt/eingerichtet |
 
 Empfehlungen (GitHub, graphify, gute Gewohnheiten): [../EMPFEHLUNG.md](../EMPFEHLUNG.md) ·

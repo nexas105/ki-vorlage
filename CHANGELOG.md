@@ -9,6 +9,16 @@ Versionsschema: `HAUPT.NEBEN.FIX`
 - **NEBEN**: neue Bausteine, Regeln oder Doku, Update per Skript
 - **FIX**: Korrekturen, Update per Skript
 
+## 1.3.0 – 2026-11-10
+
+- Firmenrechner: Vor jeder Installation fragt die KI, ob Installationen erlaubt sind.
+  Sperren werden nie umgangen (AGENTS.md, Abschnitt 13a). Stattdessen: IT-Anfrage,
+  Benutzerordner nur mit ausdrücklicher Erlaubnis, anderer Rechner oder Tobias fragen
+- Bei Einschränkungen schlägt die KI aktiv die **Prototyp-Umgebung von Tobias** vor
+  (fertig im Browser, nichts installieren, Server in Deutschland)
+- Neue Vorlage `docs/vorlagen/it-anfrage.md` (fertige Anfrage an die IT)
+- Einrichtungs-Checkliste um „Rechner: privat oder Firma?“ ergänzt
+
 ## 1.2.0 – 2026-11-10
 
 Neue Regeln (AGENTS.md, Abschnitte 4 und 14–20):

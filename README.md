@@ -11,7 +11,8 @@ wiederverwendbaren Bausteinen.
 
 ## Neues Projekt starten
 
-0. **Claude einrichten** (App, Abo, Ordner): [docs/08-claude-einrichten.md](docs/08-claude-einrichten.md)
+0. **Claude einrichten** (App, Abo, Ordner): [docs/08-claude-einrichten.md](docs/08-claude-einrichten.md).
+   Firmenrechner ohne Installationsrechte? Tobias bietet eine fertige Prototyp-Umgebung im Browser an.
 1. **Node.js**: Claude prüft das beim Start und installiert es auf Wunsch. Selbst geht auch: https://nodejs.org (LTS).
 2. Den Inhalt von [PROMPT.md](PROMPT.md) in Claude einfügen.
 3. Fragen beantworten. Die KI legt den Projektordner an, startet die App und baut danach

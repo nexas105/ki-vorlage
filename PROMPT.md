@@ -32,7 +32,10 @@ Ich möchte ein neues Tool als Prototyp bauen lassen. Bitte gehe so vor:
    werden nicht verändert.
 
 5. **Prüfe, ob Node.js 22.13 oder neuer installiert ist** (`node -v`). Falls nicht,
-   biete mir an, es für mich zu installieren, und mach es nach meinem Okay:
+   frag mich zuerst, ob das ein Firmenrechner ist und ob ich Programme installieren darf.
+   Wenn nicht: keine Sperren umgehen, sondern nach AGENTS.md Abschnitt 13a vorgehen
+   (z. B. IT-Anfrage erstellen). Wenn ja, biete mir an, es zu installieren, und mach es
+   nach meinem Okay:
    - Windows: `winget install --id OpenJS.NodeJS.LTS -e`
    - Mac mit Homebrew: `brew install node`
    - Mac ohne Homebrew: den LTS-Installer (.pkg) von https://nodejs.org laden und öffnen,

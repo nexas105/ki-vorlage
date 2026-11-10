@@ -7,6 +7,7 @@ Status: `offen` · `ja` · `nein` · `erledigt` · `später`
 
 | Punkt | Status | Datum | Notiz |
 |---|---|---|---|
+| Rechner: privat oder Firma? Installieren erlaubt? | offen | | Weg bei Einschränkungen: IT-Anfrage / Benutzerordner / anderer Rechner / Tobias |
 | Claude-Sitzung im Projektordner gestartet | offen | | siehe docs/08-claude-einrichten.md |
 | Node.js vorhanden (22.13+) | offen | | |
 | Admin-Passwort in `web/.env.local` gesetzt | offen | | |

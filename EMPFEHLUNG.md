@@ -16,6 +16,12 @@ Was du neben dieser Vorlage nutzen solltest, und warum. Die KI fragt dich zu jed
 
 Die App läuft mit Node.js. Claude prüft das beim Start und installiert es auf Wunsch für
 dich (du bestätigst nur das Installationsfenster). Selbst geht auch: https://nodejs.org → „LTS“.
+
+**Firmenrechner ohne Installationsrechte?** Claude umgeht keine Sperren. Am einfachsten ist
+dann die **Prototyp-Umgebung von Tobias**: fertig eingerichtet im Browser, nichts installieren,
+frei austoben, Server in Deutschland. Einfach bei Tobias melden (info@tobiasjonas-ludwig.de).
+Alternativ erstellt Claude dir eine Anfrage an deine IT
+(siehe `docs/08-claude-einrichten.md`, Abschnitt 0).
 Die Datenbank (SQLite) ist darin schon enthalten.
 
 ## 2. GitHub: Sicherung und Zusammenarbeit

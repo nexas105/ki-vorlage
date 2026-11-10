@@ -8,7 +8,7 @@ Link zum GitHub-Repository). Wird von der KI aktuell gehalten.
 
 ## Anlass
 
-<Plan-Review vor dem Bauen | Prototyp fertig | Problem, bei dem die KI nicht weiterkommt | Projekt wird zu groß>
+<Plan-Review vor dem Bauen | Prototyp fertig | Problem, bei dem die KI nicht weiterkommt | Projekt wird zu groß | Anfrage Prototyp-Umgebung (Firmenrechner/Einschränkungen)>
 
 ## Worum geht es
 
