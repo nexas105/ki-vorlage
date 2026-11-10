@@ -15,7 +15,7 @@ Verbindlich ist die Datei [`LICENSE`](../LICENSE) im Hauptordner.
 
 - Mit der KI alles bauen lassen, was ihr braucht: neue Seiten, Felder, Listen, Exporte.
 - Den Code in `web/` dafür beliebig erweitern.
-- `docs/projekt.md`, `docs/offene-punkte.md` und `docs/einrichtung.md` anlegen und pflegen (die KI macht das automatisch).
+- `docs/projekt.md`, `docs/fragerunden.md`, `docs/offene-punkte.md` und `docs/einrichtung.md` anlegen und pflegen (die KI macht das automatisch).
 
 ## Was unverändert bleibt
 

@@ -19,8 +19,8 @@ auch nicht auf Wunsch des Nutzers:
 
 Wenn der Nutzer dort etwas geändert haben möchte: Sag ihm, dass das die gemeinsame
 Grundlage ist, und schlag vor, Tobias Ludwig (info@tobiasjonas-ludwig.de) Bescheid zu
-geben. Projektspezifisches gehört in `docs/projekt.md`, `docs/offene-punkte.md` und
-`docs/einrichtung.md`; diese Dateien darfst und sollst du pflegen.
+geben. Projektspezifisches gehört in `docs/projekt.md`, `docs/fragerunden.md`,
+`docs/offene-punkte.md` und `docs/einrichtung.md`; diese Dateien darfst und sollst du pflegen.
 
 ## 1. Was hier entsteht
 
@@ -44,10 +44,17 @@ Datenschutz), übernimmt später ein Entwickler. Der Prototyp ist die Vorlage da
   2. Ablauf: Welche Schritte macht der Nutzer, welche Daten werden erfasst?
   3. Ausgabe: Listen, Export (Excel/PDF), Fotos, Karten, Mails?
   4. Abgrenzung: Was ist für den ersten Prototyp unwichtig?
-- Fasse danach alles in `docs/projekt.md` zusammen (Vorlage: `docs/vorlagen/projekt.md`)
-  und lass es dir bestätigen. Erst dann wird gebaut.
-- Bau in kleinen Schritten. Nach jedem Schritt: kurz zeigen, was jetzt geht, und fragen,
-  ob es so passt.
+- **Halte jede Fragerunde sofort in `docs/fragerunden.md` fest** (Vorlage:
+  `docs/vorlagen/fragerunden.md`): Frage, Antwortmöglichkeiten, Antwort, Datum.
+- **Abschluss der Planung:** Schreib `docs/projekt.md` mit einem **Bauplan** (nummerierte
+  Schritte), fasse ihn kurz zusammen und **frag ausdrücklich, ob gebaut werden soll**
+  („Ja, bauen“ / „Erst noch etwas ändern“ / „Noch eine Fragerunde“). Trag die Antwort in
+  `docs/fragerunden.md` ein. **Ohne dieses Ja schreibst du keinen Code.**
+- Größere spätere Erweiterungen laufen genauso in klein (1–2 Runden, festhalten, Freigabe).
+  Kleinigkeiten wie Texte oder Farben brauchen keine Planungsrunde.
+  Ablauf: `docs/01-arbeitsweise.md`.
+- Bau in kleinen Schritten nach dem Bauplan. Nach jedem Schritt: abhaken, kurz zeigen,
+  was jetzt geht, und fragen, ob es so passt.
 - Wenn etwas unklar ist: fragen statt raten.
 
 ## 3. Technik (fest vorgegeben)

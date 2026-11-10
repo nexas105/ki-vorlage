@@ -2,7 +2,7 @@
 
 Diese Dokumentation ist Teil der Basis und wird nicht verändert (siehe
 [00-rechte-und-zusammenarbeit.md](00-rechte-und-zusammenarbeit.md)).
-Projektspezifisches steht in `projekt.md`, `offene-punkte.md` und `einrichtung.md`.
+Projektspezifisches steht in `projekt.md`, `fragerunden.md`, `offene-punkte.md` und `einrichtung.md`.
 
 | Datei | Inhalt |
 |---|---|
@@ -18,6 +18,7 @@ Projektspezifisches steht in `projekt.md`, `offene-punkte.md` und `einrichtung.m
 | [09-updates.md](09-updates.md) | Version der Vorlage prüfen und Updates übernehmen |
 | [vorlagen/projekt.md](vorlagen/projekt.md) | Vorlage Projektsteckbrief |
 | [vorlagen/offene-punkte.md](vorlagen/offene-punkte.md) | Vorlage Liste für den Entwickler |
+| [vorlagen/fragerunden.md](vorlagen/fragerunden.md) | Vorlage Protokoll der Fragerunden mit Freigabe zum Bauen |
 | [vorlagen/einrichtung.md](vorlagen/einrichtung.md) | Vorlage Checkliste: was wurde schon gefragt/eingerichtet |
 
 Empfehlungen (GitHub, graphify, gute Gewohnheiten): [../EMPFEHLUNG.md](../EMPFEHLUNG.md) ·

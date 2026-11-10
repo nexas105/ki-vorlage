@@ -12,6 +12,8 @@ aussehen soll, und baut dann Schritt für Schritt einen klickbaren Prototyp.
 - Erst die nächste Runde, wenn die vorige beantwortet ist.
 - Nach Abläufen fragen, nicht nach Technik. Gut: „Wer macht die Fotos, und wann?“
   Schlecht: „Soll ich eine REST-API bauen?“
+- **Jede Runde wird sofort in `docs/fragerunden.md` festgehalten** (Vorlage
+  `docs/vorlagen/fragerunden.md`): Frage, Antwortmöglichkeiten, Antwort, Datum.
 
 ### Runde 1: Ziel & Nutzer
 - Welches Problem löst das Tool? Was wird heute stattdessen gemacht (Excel, Papier, Mail)?
@@ -33,12 +35,33 @@ aussehen soll, und baut dann Schritt für Schritt einen klickbaren Prototyp.
 - Was ist für den ersten Prototyp unwichtig und kommt später?
 - Gibt es ein Vorbild (Screenshot, bestehendes Tool, Excel-Datei)?
 
-## Projektsteckbrief
+## Abschluss der Planung und Freigabe
 
-Nach den Runden schreibt die KI `docs/projekt.md` (Vorlage `docs/vorlagen/projekt.md`)
-und fragt: „Passt das so?“ Erst nach dem Ja wird gebaut.
+Nach den Runden:
+
+1. `docs/projekt.md` schreiben bzw. aktualisieren (Vorlage `docs/vorlagen/projekt.md`),
+   inklusive **Bauplan** mit nummerierten Schritten. Status: „Planung“.
+2. Dem Nutzer kurz zusammenfassen: was gebaut wird, in welchen Schritten, was bewusst
+   noch nicht.
+3. **Ausdrücklich fragen, ob gebaut werden soll**, mit diesen Antworten:
+   - „Ja, bauen“ (Empfehlung)
+   - „Erst noch etwas ändern“
+   - „Noch eine Fragerunde“
+4. Antwort in `docs/fragerunden.md` unter „Freigabe zum Bauen“ eintragen. Bei „Ja“ in
+   `docs/projekt.md` den Status auf „freigegeben am <Datum>“ setzen.
+
+**Ohne Freigabe wird kein Code geschrieben.**
+
+### Spätere Erweiterungen
+
+Wünscht der Nutzer später eine größere neue Funktion (neue Seite, neue Daten, Export …),
+gilt derselbe Ablauf in klein: 1–2 Fragerunden, als neuer Abschnitt oben in
+`docs/fragerunden.md` festhalten, Bauplan in `docs/projekt.md` ergänzen, Freigabe fragen.
+Kleinigkeiten (Text, Farbe, ein zusätzliches Feld) brauchen keine Planungsrunde.
 
 ## Bauen in Schritten
+
+Nach der Freigabe Schritt für Schritt nach dem Bauplan:
 
 1. Datenmodell in `web/lib/schema.sql` anlegen.
 2. Eine Seite zum Erfassen, eine zum Anzeigen bzw. Verwalten im Adminbereich,
@@ -46,7 +69,8 @@ und fragt: „Passt das so?“ Erst nach dem Ja wird gebaut.
 3. Dem Nutzer zeigen, im Browser ausprobieren lassen, nachfragen.
 4. Nächste Funktion.
 
-Nach jedem Schritt: Was geht jetzt, was kommt als Nächstes, passt das?
+Nach jedem Schritt: im Bauplan abhaken, kurz zeigen, was jetzt geht, und fragen, ob es
+passt, bevor der nächste Schritt beginnt.
 
 ## Offene Punkte
 

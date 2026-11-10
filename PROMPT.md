@@ -50,9 +50,11 @@ Ich möchte ein neues Tool als Prototyp bauen lassen. Bitte gehe so vor:
    `docs/07-github.md` durch.
 
 7. **Starte die Fragerunden** nach `docs/01-arbeitsweise.md`: höchstens 4 Fragen pro
-   Runde, mit Antwortmöglichkeiten und deiner Empfehlung. Fasse danach alles in
-   `docs/projekt.md` zusammen und lege `docs/offene-punkte.md` aus der Vorlage an.
-   Erst wenn ich den Steckbrief bestätige, fängst du an zu bauen.
+   Runde, mit Antwortmöglichkeiten und deiner Empfehlung. Halte jede Runde sofort in
+   `docs/fragerunden.md` fest. Fasse danach alles mit Bauplan in `docs/projekt.md`
+   zusammen und lege `docs/offene-punkte.md` aus der Vorlage an.
+   **Frag mich dann ausdrücklich, ob du mit dem Bauen anfangen sollst.** Erst nach
+   meinem Ja wird gebaut.
 
 8. **Zum Schluss der Einrichtung** sag mir, dass ich für die weitere Arbeit eine
    **neue Sitzung direkt im Projektordner** starten soll (siehe

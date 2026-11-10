@@ -25,7 +25,8 @@ NUTZUNGSBEDINGUNGEN DER KI-VORLAGE
    - Mit KI-Assistenten beliebige Funktionen, Seiten und Inhalte auf der Basis
      aufzubauen („prompten“) und dafür den Code in web/ zu erweitern.
    - Projektspezifische Dateien anzulegen und zu ändern, insbesondere
-     docs/projekt.md, docs/offene-punkte.md und docs/einrichtung.md.
+     docs/projekt.md, docs/fragerunden.md, docs/offene-punkte.md und
+     docs/einrichtung.md.
    - Prototypen intern zu zeigen und an Tobias Ludwig zur Weiterentwicklung
      zu übergeben.
 

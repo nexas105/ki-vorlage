@@ -9,6 +9,14 @@ Versionsschema: `HAUPT.NEBEN.FIX`
 - **NEBEN**: neue Bausteine, Regeln oder Doku, Update per Skript
 - **FIX**: Korrekturen, Update per Skript
 
+## 1.1.0 – 2026-11-10
+
+- Fragerunden werden protokolliert: neue Datei `docs/fragerunden.md` (Vorlage in
+  `docs/vorlagen/fragerunden.md`) mit Frage, Antwortmöglichkeiten, Antwort und Datum
+- Planungsphase endet mit Bauplan in `docs/projekt.md` und ausdrücklicher Frage, ob gebaut
+  werden soll; ohne Freigabe kein Code
+- Gleicher Ablauf in klein für größere spätere Erweiterungen
+
 ## 1.0.1 – 2026-11-10
 
 - Claude installiert fehlende Programme (Node.js, git, gh, Python/uv) nach Okay selbst,
