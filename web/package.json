@@ -1,13 +1,18 @@
 {
   "name": "ki-vorlage",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": "Tobias Ludwig <info@tobiasjonas-ludwig.de> (https://tobiasjonas-ludwig.de)",
+  "license": "SEE LICENSE IN ../LICENSE",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "seed": "node scripts/seed.mjs",
-    "pack": "node scripts/pack.mjs"
+    "pack": "node scripts/pack.mjs",
+    "screens": "node scripts/screens.mjs",
+    "vorlage:pruefen": "node scripts/update-vorlage.mjs --pruefen",
+    "vorlage:update": "node scripts/update-vorlage.mjs"
   },
   "dependencies": {
     "next": "16.4.3",

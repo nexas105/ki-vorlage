@@ -25,7 +25,8 @@ aussehen soll, und baut dann Schritt für Schritt einen klickbaren Prototyp.
 
 ### Runde 3: Ausgabe
 - Muss etwas exportiert werden? (Excel, PDF, CSV)
-- Sollen Mails verschickt werden? (Im Prototyp nur als Vorschau unter `/outbox`.)
+- Sollen Mails verschickt werden? (Im Prototyp nur als Vorschau unter `/admin/outbox`.)
+- Was soll nur das Büro sehen? (Kommt in den Adminbereich unter `/admin`.)
 - Wird es am Handy benutzt? (Dann mobil zuerst gestalten.)
 
 ### Runde 4: Abgrenzung
@@ -39,8 +40,9 @@ und fragt: „Passt das so?“ Erst nach dem Ja wird gebaut.
 
 ## Bauen in Schritten
 
-1. Datenmodell in `lib/schema.sql` anlegen.
-2. Eine Seite zum Erfassen, eine zum Anzeigen.
+1. Datenmodell in `web/lib/schema.sql` anlegen.
+2. Eine Seite zum Erfassen, eine zum Anzeigen bzw. Verwalten im Adminbereich,
+   gebaut aus den Bausteinen in `web/components/ui/`.
 3. Dem Nutzer zeigen, im Browser ausprobieren lassen, nachfragen.
 4. Nächste Funktion.
 

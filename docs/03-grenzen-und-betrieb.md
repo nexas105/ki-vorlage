@@ -10,8 +10,8 @@
 
 | Bereich | Im Prototyp | Für den Betrieb nötig |
 |---|---|---|
-| Zugang | Jeder mit Zugriff auf den Rechner sieht alles | Login, Rollen, Passwortschutz, geteilte Links mit Ablauf |
-| Mails | Nur Vorschau unter `/outbox` | Echter Versand (SMTP), Absender-Domain, Zustellbarkeit |
+| Zugang | Öffentliche Seiten für alle, `/admin` mit einem einfachen Passwort aus `.env.local` | Echter Login mit Benutzerkonten, Rollen, Schutz vor Durchprobieren, geteilte Links mit Ablauf |
+| Mails | Nur Vorschau unter `/admin/outbox` | Echter Versand (SMTP), Absender-Domain, Zustellbarkeit |
 | Hosting | Läuft nur lokal (`localhost`) | Server, Domain, HTTPS, Updates |
 | Daten | Eine SQLite-Datei auf dem Rechner | Backups, Speicherplatz, Aufbewahrungsfristen |
 | Datenschutz | Nur erfundene Testdaten | DSGVO-Prüfung, Auftragsverarbeitung, Löschkonzept |

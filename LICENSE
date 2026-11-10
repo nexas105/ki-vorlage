@@ -1,0 +1,52 @@
+Copyright (c) 2026 Tobias Ludwig, IT-Dienstleister
+Lauterbachstr. 37, 53639 Königswinter
+https://tobiasjonas-ludwig.de
+
+Alle Rechte vorbehalten.
+
+
+NUTZUNGSBEDINGUNGEN DER KI-VORLAGE
+
+1. Gegenstand
+   Diese Vorlage („Basis“) besteht aus dem Grundgerüst der App im Ordner web/
+   (Seitenaufbau, Bausteine in web/components/, Datenbank- und Admin-Anbindung,
+   Skripte), den Regeln für KI-Assistenten (AGENTS.md, CLAUDE.md, .claude/),
+   der Dokumentation in docs/ sowie PROMPT.md und README.md.
+   Die Basis ist geistiges Eigentum von Tobias Ludwig.
+
+2. Zweck
+   Die Basis wird der Hüttinger Direktwerbung GmbH im Rahmen der Zusammenarbeit
+   zur Verfügung gestellt. Sie dient dazu, Ideen für eigene Werkzeuge mit Hilfe
+   von KI als Prototyp umzusetzen und diese anschließend gemeinsam für den
+   Betrieb weiterzuentwickeln.
+
+3. Erlaubt
+   - Die Basis für eigene Prototypen zu kopieren und zu nutzen.
+   - Mit KI-Assistenten beliebige Funktionen, Seiten und Inhalte auf der Basis
+     aufzubauen („prompten“) und dafür den Code in web/ zu erweitern.
+   - Projektspezifische Dateien anzulegen und zu ändern, insbesondere
+     docs/projekt.md, docs/offene-punkte.md und docs/einrichtung.md.
+   - Prototypen intern zu zeigen und an Tobias Ludwig zur Weiterentwicklung
+     zu übergeben.
+
+4. Nicht erlaubt (ohne vorherige schriftliche Zustimmung)
+   - Die Dokumentation und die Regeln der Basis zu ändern oder zu entfernen
+     (AGENTS.md, CLAUDE.md, .claude/, LICENSE, README.md, EMPFEHLUNG.md,
+     CHANGELOG.md, VERSION, tools/, docs/0*,
+     docs/README.md, docs/vorlagen/).
+   - Copyright- und Lizenzhinweise zu entfernen, auch nicht im Fußbereich der App.
+   - Die Basis an Dritte weiterzugeben, zu verkaufen, zu veröffentlichen oder
+     als Grundlage für Leistungen Dritter zu verwenden.
+
+5. Eigene Inhalte
+   Inhalte, Daten, Logos und fachliche Ideen der Hüttinger Direktwerbung GmbH
+   bleiben deren Eigentum. Die Rechte an der Basis bleiben davon unberührt.
+
+6. Kein Betrieb ohne Prüfung, keine Gewährleistung
+   Mit der Basis erstellte Anwendungen sind Prototypen. Sie dürfen erst nach
+   Prüfung und Absicherung durch einen Entwickler online gestellt oder mit
+   echten Daten genutzt werden. Die Basis wird ohne Gewährleistung bereitgestellt.
+   Eine Haftung für Schäden aus der Nutzung ungeprüfter Prototypen ist
+   ausgeschlossen, soweit gesetzlich zulässig.
+
+Fragen zur Nutzung: info@tobiasjonas-ludwig.de

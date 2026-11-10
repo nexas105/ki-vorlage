@@ -22,21 +22,35 @@ Ich möchte ein neues Tool als Prototyp bauen lassen. Bitte gehe so vor:
    - Sonst die ZIP laden und entpacken:
      https://github.com/nexas105/ki-vorlage/archive/refs/heads/main.zip
      (Inhalt von `ki-vorlage-main/` in `<ordnername>/` verschieben).
-   - In `package.json` das Feld `"name"` auf den Ordnernamen setzen.
+   - In `web/package.json` das Feld `"name"` auf den Ordnernamen setzen.
    - `PROMPT.md` im neuen Projekt löschen (wird dort nicht mehr gebraucht).
+   - `docs/vorlagen/einrichtung.md` nach `docs/einrichtung.md` kopieren und dort bei
+     „Vorlagen-Version“ den Inhalt der Datei `VERSION` eintragen.
 
-4. **Lies im neuen Ordner `AGENTS.md`, `CLAUDE.md` und alle Dateien in `docs/`.**
-   Diese Regeln gelten ab jetzt für das ganze Projekt.
+4. **Lies im neuen Ordner `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `EMPFEHLUNG.md` und alle Dateien in `docs/`.**
+   Diese Regeln gelten ab jetzt für das ganze Projekt. Regeln und Dokumentation
+   werden nicht verändert.
 
 5. **Prüfe, ob Node.js 22.13 oder neuer installiert ist** (`node -v`). Falls nicht:
    Sag mir, dass ich es von https://nodejs.org (LTS) installieren soll, und warte.
-   Danach `npm install` und `npm run dev` im Projektordner starten und mir sagen,
-   dass ich http://localhost:3000 öffnen kann.
+   Danach im Ordner `web/` `npm install` ausführen, `web/.env.example` nach
+   `web/.env.local` kopieren, mich nach einem Admin-Passwort fragen und es dort
+   eintragen. Dann `npm run dev` starten und mir sagen, dass ich
+   http://localhost:3000 öffnen kann.
 
-6. **Starte die Fragerunden** nach `docs/01-arbeitsweise.md`: höchstens 4 Fragen pro
+6. **Einrichtungsrunde:** Erkläre mir kurz GitHub und frag mich nach den offenen Punkten
+   in `docs/einrichtung.md` (GitHub-Konto, privates Repository mit `nexas105` als Admin,
+   graphify). Trag meine Antworten ein. Wenn ich GitHub will, führ mich nach
+   `docs/07-github.md` durch.
+
+7. **Starte die Fragerunden** nach `docs/01-arbeitsweise.md`: höchstens 4 Fragen pro
    Runde, mit Antwortmöglichkeiten und deiner Empfehlung. Fasse danach alles in
    `docs/projekt.md` zusammen und lege `docs/offene-punkte.md` aus der Vorlage an.
    Erst wenn ich den Steckbrief bestätige, fängst du an zu bauen.
 
-Wichtig: Das ist ein Prototyp. Kein Login, kein echter Mailversand, kein Hosting.
+8. **Zum Schluss der Einrichtung** sag mir, dass ich für die weitere Arbeit eine
+   **neue Sitzung direkt im Projektordner** starten soll (siehe
+   `docs/08-claude-einrichten.md`), damit die Projektregeln immer geladen werden.
+
+Wichtig: Das ist ein Prototyp. Kein echter Login (nur das einfache Admin-Passwort), kein echter Mailversand, kein Hosting.
 Erinnere mich daran, dass ein Entwickler drüberschauen muss, bevor es online geht.

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(/AGENTS.md)",
+      "Edit(/CLAUDE.md)",
+      "Edit(/LICENSE)",
+      "Edit(/README.md)",
+      "Edit(/EMPFEHLUNG.md)",
+      "Edit(/tools/**)",
+      "Edit(/VERSION)",
+      "Edit(/CHANGELOG.md)",
+      "Edit(/docs/0*.md)",
+      "Edit(/docs/README.md)",
+      "Edit(/docs/vorlagen/**)",
+      "Edit(/.claude/**)"
+    ]
+  }
+}

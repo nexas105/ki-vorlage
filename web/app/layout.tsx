@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import Link from "next/link";
-import { PrototypBanner } from "@/components/PrototypBanner";
+import { PrototypBanner } from "@/components/layout/PrototypBanner";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Prototyp",
+  title: "Hüttinger · Prototyp",
   description: "Prototyp, erstellt mit der KI-Vorlage",
 };
 
@@ -18,14 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de">
       <body>
         <PrototypBanner />
-        <header className="kopf">
-          <Link href="/" className="logo">Prototyp</Link>
-          <nav>
-            <Link href="/eintraege">Einträge</Link>
-            <Link href="/outbox">Mail-Vorschau</Link>
-          </nav>
-        </header>
+        <SiteHeader />
         <main className="inhalt">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

@@ -1,13 +1,16 @@
-// Erstellt abgabe/<projektname>_<datum>.zip OHNE node_modules, .next, Datenbank usw.
+// Erstellt <projekt>/abgabe/<projektname>_<datum>.zip mit dem GANZEN Projekt
+// (Regeln, docs/, web/) – OHNE node_modules, .next, Datenbank usw.
+// Aufruf im Ordner web/: npm run pack
 // Läuft auf Windows, macOS und Linux, ohne zusätzliche Programme.
 import { readdirSync, readFileSync, statSync, mkdirSync, writeFileSync } from "node:fs";
 import { deflateRawSync, crc32 } from "node:zlib";
 import path from "node:path";
 
-const ROOT = process.cwd();
-const AUSLASSEN_ORDNER = new Set(["node_modules", ".next", ".git", "abgabe", ".turbo", ".vercel"]);
-const AUSLASSEN_PFADE = ["data/"]; // Datenbank + Uploads (bis auf .gitkeep)
-const AUSLASSEN_DATEIEN = [/^\.env/, /\.tsbuildinfo$/, /^\.DS_Store$/, /^next-env\.d\.ts$/];
+const WEB = process.cwd();
+const ROOT = path.resolve(WEB, "..");
+const AUSLASSEN_ORDNER = new Set(["node_modules", ".next", ".git", "abgabe", ".turbo", ".vercel", "vorlage-update"]);
+const AUSLASSEN_PFADE = ["web/data/"]; // Datenbank + Uploads (bis auf .gitkeep)
+const AUSLASSEN_DATEIEN = [/^\.env(?!\.example$)/, /\.tsbuildinfo$/, /^\.DS_Store$/, /^next-env\.d\.ts$/];
 
 function sammeln(dir, liste = []) {
   for (const name of readdirSync(dir)) {
@@ -32,7 +35,7 @@ function dosZeit(d) {
   return { zeit, datum };
 }
 
-const pkg = JSON.parse(readFileSync(path.join(ROOT, "package.json"), "utf8"));
+const pkg = JSON.parse(readFileSync(path.join(WEB, "package.json"), "utf8"));
 const projekt = pkg.name || path.basename(ROOT);
 const heute = new Date().toISOString().slice(0, 10);
 const zielOrdner = path.join(ROOT, "abgabe");
@@ -95,7 +98,7 @@ const zip = Buffer.concat([...teile, zentralBuf, ende]);
 writeFileSync(ziel, zip);
 
 const mb = (zip.length / 1024 / 1024).toFixed(2);
-console.log(`Fertig: ${path.relative(ROOT, ziel)} (${dateien.length} Dateien, ${mb} MB)`);
+console.log(`Fertig: ${ziel} (${dateien.length} Dateien, ${mb} MB)`);
 console.log("Ohne node_modules, .next, Datenbank und .env – kann per Mail verschickt werden.");
 if (zip.length > 20 * 1024 * 1024) {
   console.log("Achtung: größer als 20 MB. Prüfen, ob große Dateien (Fotos, Videos) drin sind.");

@@ -2,8 +2,11 @@ node_modules/
 .next/
 next-env.d.ts
 *.tsbuildinfo
-data/*
-!data/.gitkeep
+web/data/*
+!web/data/.gitkeep
 abgabe/
 .env*
+!.env.example
 .DS_Store
+vorlage-update/
+PROJEKTE.md
