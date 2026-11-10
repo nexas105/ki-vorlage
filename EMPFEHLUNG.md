@@ -6,7 +6,7 @@ Was du neben dieser Vorlage nutzen solltest, und warum. Die KI fragt dich zu jed
 | # | Was | Pflicht? | Wofür |
 |---|---|---|---|
 | 0 | Claude-App mit „Code“ | **ja** | Damit die KI im Projektordner arbeiten kann, siehe [docs/08-claude-einrichten.md](docs/08-claude-einrichten.md) |
-| 1 | Node.js | **ja** | Damit die App läuft |
+| 1 | Node.js | **ja** | Damit die App läuft (Claude installiert es auf Wunsch) |
 | 2 | GitHub (privat) | **dringend empfohlen** | Sicherung, Versionsverlauf, Zusammenarbeit mit Tobias |
 | 3 | graphify | optional | Die KI versteht größere Projekte schneller und genauer |
 
@@ -14,7 +14,8 @@ Was du neben dieser Vorlage nutzen solltest, und warum. Die KI fragt dich zu jed
 
 ## 1. Node.js
 
-Die App läuft mit Node.js. Einmal installieren: https://nodejs.org → „LTS“.
+Die App läuft mit Node.js. Claude prüft das beim Start und installiert es auf Wunsch für
+dich (du bestätigst nur das Installationsfenster). Selbst geht auch: https://nodejs.org → „LTS“.
 Die Datenbank (SQLite) ist darin schon enthalten.
 
 ## 2. GitHub: Sicherung und Zusammenarbeit
@@ -48,7 +49,7 @@ findet sich dadurch in größeren Projekten schneller zurecht und macht weniger 
 
 **Voraussetzung:** Python 3.10 oder neuer und das Werkzeug `uv` (https://docs.astral.sh/uv/).
 
-**Einrichtung** (macht die KI nach deinem Okay):
+**Einrichtung** (macht die KI nach deinem Okay, inklusive Python/uv falls nötig):
 
 ```bash
 uv tool install graphifyy          # Programm installieren (alternativ: pipx install graphifyy)

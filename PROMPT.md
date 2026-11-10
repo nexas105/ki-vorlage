@@ -31,8 +31,14 @@ Ich möchte ein neues Tool als Prototyp bauen lassen. Bitte gehe so vor:
    Diese Regeln gelten ab jetzt für das ganze Projekt. Regeln und Dokumentation
    werden nicht verändert.
 
-5. **Prüfe, ob Node.js 22.13 oder neuer installiert ist** (`node -v`). Falls nicht:
-   Sag mir, dass ich es von https://nodejs.org (LTS) installieren soll, und warte.
+5. **Prüfe, ob Node.js 22.13 oder neuer installiert ist** (`node -v`). Falls nicht,
+   biete mir an, es für mich zu installieren, und mach es nach meinem Okay:
+   - Windows: `winget install --id OpenJS.NodeJS.LTS -e`
+   - Mac mit Homebrew: `brew install node`
+   - Mac ohne Homebrew: den LTS-Installer (.pkg) von https://nodejs.org laden und öffnen,
+     ich klicke mich dann durch.
+   Bestätigungsfenster und Passwörter gebe ich selbst ein. Wird `node` danach nicht
+   gefunden, sag mir, dass ich die Claude-App neu starten soll.
    Danach im Ordner `web/` `npm install` ausführen, `web/.env.example` nach
    `web/.env.local` kopieren, mich nach einem Admin-Passwort fragen und es dort
    eintragen. Dann `npm run dev` starten und mir sagen, dass ich

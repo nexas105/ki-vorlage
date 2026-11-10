@@ -9,6 +9,12 @@ Versionsschema: `HAUPT.NEBEN.FIX`
 - **NEBEN**: neue Bausteine, Regeln oder Doku, Update per Skript
 - **FIX**: Korrekturen, Update per Skript
 
+## 1.0.1 – 2026-11-10
+
+- Claude installiert fehlende Programme (Node.js, git, gh, Python/uv) nach Okay selbst,
+  statt den Nutzer auf Webseiten zu schicken (AGENTS.md, Abschnitt 13; PROMPT.md, Schritt 5)
+- Anleitungen entsprechend angepasst
+
 ## 1.0.0 – 2026-11-10
 
 Erste Fassung.

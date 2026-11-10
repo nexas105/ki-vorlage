@@ -12,7 +12,7 @@ wiederverwendbaren Bausteinen.
 ## Neues Projekt starten
 
 0. **Claude einrichten** (App, Abo, Ordner): [docs/08-claude-einrichten.md](docs/08-claude-einrichten.md)
-1. **Node.js** installieren (https://nodejs.org, Version „LTS“), falls noch nicht vorhanden.
+1. **Node.js**: Claude prüft das beim Start und installiert es auf Wunsch. Selbst geht auch: https://nodejs.org (LTS).
 2. Den Inhalt von [PROMPT.md](PROMPT.md) in Claude einfügen.
 3. Fragen beantworten. Die KI legt den Projektordner an, startet die App und baut danach
    Schritt für Schritt, was du brauchst.

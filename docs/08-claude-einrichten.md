@@ -18,10 +18,13 @@ Für gelegentliche Prototypen reicht in der Regel **Pro**. Wenn du oft an Grenze
 2. App starten und mit deinem Claude-Konto anmelden.
 3. Oben bzw. in der Seitenleiste auf **„Code“** wechseln.
 
-## 3. Node.js installieren
+## 3. Node.js
 
-https://nodejs.org → Version „LTS“ herunterladen und installieren. Danach die Claude-App
-einmal neu starten.
+Musst du nicht selbst installieren: Claude prüft beim Projektstart, ob Node.js da ist, und
+bietet an, es für dich zu installieren. Du bestätigst nur das Installationsfenster bzw. gibst
+dein Passwort ein. Danach die Claude-App einmal neu starten, falls Claude dich darum bittet.
+
+Selbst installieren geht auch: https://nodejs.org → Version „LTS“.
 
 ## 4. Arbeitsordner anlegen und freigeben
 
@@ -49,7 +52,7 @@ z. B. „Füge bei den Stopps ein Feld für die Uhrzeit hinzu“. Die App starte
 
 | Problem | Lösung |
 |---|---|
-| „node“ oder „npm“ nicht gefunden | Node.js installieren, Claude-App neu starten |
+| „node“ oder „npm“ nicht gefunden | Claude bitten: „Installiere Node.js“, danach Claude-App neu starten |
 | Claude kennt die Regeln nicht | Sitzung wurde nicht im Projektordner gestartet → neue Sitzung im Projektordner |
 | Seite lädt nicht | Claude bitten: „Starte die App neu und prüfe die Fehler“ |
 | Limit erreicht | Später weitermachen oder Tarif prüfen |

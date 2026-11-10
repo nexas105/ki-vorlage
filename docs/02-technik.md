@@ -2,7 +2,8 @@
 
 ## Voraussetzung
 
-- **Node.js 22.13 oder neuer** (https://nodejs.org, „LTS“ herunterladen und installieren).
+- **Node.js 22.13 oder neuer**. Claude installiert es auf Wunsch (siehe AGENTS.md,
+  Abschnitt 13), sonst https://nodejs.org → „LTS“.
   Mehr muss nicht installiert werden: Die Datenbank (SQLite) ist in Node.js schon eingebaut.
 - Im Ordner `web/`:
   1. `npm install`

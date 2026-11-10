@@ -29,7 +29,9 @@ Danach den Benutzernamen in `docs/einrichtung.md` notieren.
 
 ## Schritt 3: Werkzeuge installieren
 
-Erst prüfen, ob schon vorhanden: `git --version` und `gh --version`.
+Erst prüfen, ob schon vorhanden: `git --version` und `gh --version`. Fehlt etwas, bietet
+die KI an, es zu installieren, und führt die Befehle nach dem Okay selbst aus.
+Bestätigungsfenster und Passwörter gibt der Nutzer ein.
 
 | System | git | GitHub CLI (gh) |
 |---|---|---|

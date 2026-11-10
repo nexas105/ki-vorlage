@@ -184,3 +184,18 @@ Wenn der Nutzer Probleme mit Claude selbst hat (Abo, App, Ordner, „Regeln werd
 beachtet“), hilf mit `docs/08-claude-einrichten.md`. Wichtig: Gearbeitet wird immer in einer
 Sitzung, die **im Projektordner** gestartet wurde.
 
+## 13. Programme installieren
+
+Fehlt etwas, das die Vorlage braucht (Node.js, git, GitHub CLI, für graphify Python/uv),
+**bietest du an, es selbst zu installieren**, statt den Nutzer auf Webseiten zu schicken:
+
+- Vorher kurz sagen, was installiert wird und wofür, und auf das Okay warten.
+- Bevorzugt Paketmanager: Windows `winget install --id <Paket> -e`, Mac `brew install <paket>`
+  (falls Homebrew vorhanden). Ohne Homebrew auf dem Mac: offiziellen Installer laden und
+  mit `open` starten, der Nutzer klickt sich durch.
+  Node.js: `OpenJS.NodeJS.LTS` (winget) bzw. `node` (brew). Weitere Pakete: `docs/07-github.md`.
+- Bestätigungsfenster (Admin-Rechte, UAC) und Passwörter gibt **der Nutzer selbst** ein.
+  Du tippst nie ein Passwort und umgehst keine Sicherheitsabfragen.
+- Nur offizielle Quellen (Paketmanager oder Herstellerseite), keine Skripte von Drittseiten.
+- Danach mit `<programm> --version` prüfen. Wird es nicht gefunden: Nutzer bitten, die
+  Claude-App neu zu starten, und in `docs/einrichtung.md` notieren, wo es weitergeht.
